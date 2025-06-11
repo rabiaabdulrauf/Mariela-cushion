@@ -5,6 +5,7 @@ import Hero from './Components/Hero';
 import Designer from './Components/Designer';
 import Begining from './Components/Begining';
 import Carrer from './Components/Carrer';
+import section from './Components/Section'
 const App = () => {
   return (
     <div>
@@ -13,6 +14,7 @@ const App = () => {
     <Designer/>
     <Begining/>
     <Carrer/>
+    <Section/>
     </div>
   );
 }
