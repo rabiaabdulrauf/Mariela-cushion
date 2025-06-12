@@ -10,7 +10,7 @@ const Navbar = () => {
     <>
       {/* Toggle Button */}
       <div className="w3-teal border-t-4 ">
-           <div >
+           <div className="logo-pic" >
     <img
       src={logo}
      className="img"
@@ -19,7 +19,7 @@ const Navbar = () => {
     />
     
         </div>
-        <div className="nav-item flex gap-6 ">
+        <div className="nav-item flex ">
           <li><a href="/path">Home</a></li>
           <li><a href="/path">About me</a></li>
           <li><a href="/path">Products</a></li>

@@ -3,7 +3,7 @@ import sofa from '../Assets/sofa.jpeg'
 const Begining = () => {
   return (
     <div>
-      <div className="beg mt-6">
+      <div className="beg mt-6 " id='animate'>
     <div className="detail">
           <h6 className=' cush pt-20 font-bold pl-2 '>
            BEGINNINGS

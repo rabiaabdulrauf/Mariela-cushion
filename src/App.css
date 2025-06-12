@@ -56,15 +56,19 @@ li:hover{
 .nav-item{
   margin-left: 38em;
  visibility: visible;
+ gap: 1.5em;
 }
+
 @media (max-width:768px) {
   .w3-button{
   visibility: visible;
   margin-left: -2em;
 }
+
 .nav-item{
   visibility: hidden;
   margin-left: 0em;
+  gap: 0em;
 }
 .img{
   height: 70px;
@@ -76,7 +80,6 @@ li:hover{
   background-color: #c9adc7; 
 }
 .photo{
-  background-color: yellow;
   height: 114vh;
   width: 870px;
   position: relative;
@@ -84,6 +87,7 @@ li:hover{
   left: 8%;
  animation: slidein 2s forwards ;
  opacity: 0;
+ background-position: center;
 }
 @keyframes slidein{
   0%{
@@ -94,6 +98,7 @@ li:hover{
     transform:  translateX(0%);
     opacity: 0;
   }
+
 }
 .photo img{
   height: 114vh;
@@ -130,13 +135,18 @@ li:hover{
   height: 55vh;
   width: 100%;
 }
+
 @media (max-width:768px) {
   .main{
     height: 100vh;
   }
+  .logo-pic{
+    width: 100%;
+  }
+  
   .photo{
   height: 80vh;
-  width:90%;
+  width:100%;
   position: relative;
   top: 10%;
   left: 0%;
@@ -362,9 +372,9 @@ li:hover{
   height: 120vh;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   gap: 0em;
-  margin-top: 0em;
+  margin-top: -5em;
 }
 .pro-data{
   height: 45vh;
@@ -435,5 +445,329 @@ li:hover{
 
 }
 @media (max-width:768px) {
+  .mainn{
+  height: 200vh;
+  width: 100%;
+  background-color: #c0a4bd;
+}
+.picture{
+  background-color: yellow;
+  height: 120vh;
+  width: 95%;
+  position: relative;
+  top: 38%;
+  left: 0%;
+ animation: slidein 2s forwards ;
+ opacity: 0;
+ margin: 0 auto;
+}
+.about img{
+  height: 300px;
+}
+
+.infromation{
+  position: relative;
+  height: 450px;
+  width: 100%;
+  background-color: #b08fad;
+  bottom: 58%;
+  left: 0%;
+  animation: slidein 2s ;
   
 }
+}
+.cushions{
+  height: 185vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.row-1{
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  margin: 1em 2em 0 2em;
+}
+.new{
+  height: 470px;
+  width: 35%;
+}
+.word{
+  font-size: 23px;
+  color: #5e4c5c;
+  padding-top: .7em;
+}
+.price{
+  color: #b4b4b4;
+}
+.new div{
+  overflow: hidden;
+}
+.new img{
+  transition: ease-in all .5s;
+  transition-behavior: normal;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-property: all;
+  object-fit: cover;
+  display: block;
+}
+.new img:hover{
+  transform: scale(1.1);
+}
+@media (max-width:768px) {
+  .cushions{
+  height: 380vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.word{
+  padding-top: 0;
+}
+.row-1{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin: 1em 2em 0 2em;
+}
+.new{
+  height: 380px;
+  width: 100%;
+}
+}
+.footer{
+  height: 90vh;
+  width: 100%;
+  background-color: #d4b3d1;
+  display: flex;
+  flex-direction: row;
+  gap: 5em;
+ 
+}
+.list{
+  height: 90vh;
+  width: 30%;
+  margin-left: 7em;
+  margin-top: 2em;
+}
+.list li{
+  color: white;
+}
+.list li:hover{
+  border: none;
+}
+
+.form{
+  height: 90vh;
+  width: 70%;
+  margin-top: 2em;
+}
+.mail{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+.text{
+  font-size: 22px;
+  font-weight: bold;
+}
+.form li{
+  color: white;
+}
+.msg{
+  font-size: 26px;
+}
+.name{
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+input{
+  height: 50px;
+  width: 300px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid white;
+  padding-left: 2em;
+  color: white;
+}
+input::placeholder{
+  color: white;
+}
+textarea{
+  background-color: transparent;
+  outline: none;
+  border: 1px solid white;
+  height: 50px;
+  width: 630px;
+  padding-left: 2em;
+}
+textarea::placeholder{
+  color: white;
+}
+.btnn{
+  height: 50px;
+  width: 200px;
+  justify-content: center;
+  display: flex;
+  border: 1px solid white;
+  color: white;
+  font-weight: bold;
+}
+.btnn:hover{
+  background-color: white;
+  color: #b08fad;
+}
+@media (max-width:768px) {
+  .footer{
+  height: 150vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0em;
+}
+.list{
+  margin-left: 1em;
+  width: 95%;
+  height: 43vh;
+}
+.form{
+  height: 92vh;
+  width: 96%;
+  margin-top: 0em;
+  margin-left: 1em;
+}
+.name{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+textarea{
+  width: 95%;
+}
+}
+.selter{
+  height: 250px;
+  width: 100%;
+}
+.ns{
+  color: #b08fad;
+  font-weight: bold;
+}
+.get{
+  color: #947a92;
+}
+.sub{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.sub input{
+  height: 50px;
+  width: 180px;
+  border: 1px solid #b08fad;
+}
+.sub input::placeholder{
+   color: #b08fad;
+}
+.SUBS{
+  height: 50px;
+  width: 180px;
+  background-color: #b08fad;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+@media (max-width:768px) {
+  .selter{
+  height: 350px;
+  width: 100%;
+}
+  .sub{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-left: 2em;
+  
+}
+.sub input{
+  height: 50px;
+  width: 250px;
+  border: 1px solid #b08fad;
+}
+}
+.shop{
+  height:250px;
+  width: 100%;
+  background-color:#d6bad3;
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+  justify-content: center;
+}
+.icon{
+  height: 210px;
+  width: 250px;
+  margin-top: 1em;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+i{
+  font-size: 30px;
+  color: white;
+}
+ .ship{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ba9eb7;
+ }
+ @media (max-width:768px) {
+  .shop{
+  height:120vh;
+  width: 100%;
+  background-color: #c2a2bf;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+}
+.icon{
+  margin: 0 auto;
+  width: 80%;
+}
+ }
+ .home{
+  height: 50px;
+  width: 100%;
+  background-color: #b08fad;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+ }
+ .copy i{
+  margin: 0 .5em 0 .5em;
+ }
+ @media (max-width:768px) {
+  .home{
+  height: 150px;
+  width: 100%;
+  background-color: #b08fad;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+ }
+ .copy i{
+  margin: 0em .5em 0 .5em;
+ }
+ }

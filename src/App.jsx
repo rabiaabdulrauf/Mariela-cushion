@@ -7,6 +7,8 @@ import Begining from './Components/Begining';
 import Carrer from './Components/Carrer';
 import Products from './Components/Products';
 import Collection from './Components/Collection';
+import Cushions from './Components/Cushions';
+import Footer from './Components/Footer';
 
 
 const App = () => {
@@ -19,6 +21,8 @@ const App = () => {
     <Carrer/>
     <Products/>
     <Collection/>
+    <Cushions/>
+    <Footer/>
     </div>
   );
 }
